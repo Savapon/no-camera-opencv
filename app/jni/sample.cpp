@@ -35,7 +35,7 @@ extern "C"
 
         // OpenCV process
         cv::cvtColor(m_src, m_dst, CV_RGBA2BGRA);
-
+        cv::flip(m_src, m_dst, 0);
 
         // Pick out arrangement from cv::Mat
         u_char *p_dst = m_dst.data;
